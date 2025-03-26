@@ -1,42 +1,25 @@
 /* ================ MOBILE STYLES ================ */
 @media (max-width: 768px) {
-    /* Header */
+    /* Improved header */
     .main-header {
-        flex-direction: column;
-        padding: 1rem;
+        height: 60px;
+        padding: 0.5rem;
+    }
+    
+    /* Better hero spacing */
+    .hero {
+        margin-top: 60px;
+        padding: 2rem 0;
+        height: auto;
+        min-height: calc(100vh - 60px);
     }
     
     .logo {
         margin-bottom: 1rem;
     }
     
-    .main-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-    
-    /* Hero */
-    .hero {
-        margin-top: 120px;
-        height: auto;
-        padding: 4rem 0;
-    }
-    
     .hero h1 {
         font-size: 2rem;
-    }
-    
-    /* Social Sidebar */
-    .social-sidebar {
-        top: auto;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        flex-direction: row;
-        background: rgba(255,255,255,0.9);
-        padding: 8px 15px;
-        border-radius: 30px;
     }
     
     .social-sidebar a {
@@ -83,5 +66,39 @@
     
     .footer-links {
         align-items: center;
+    }
+
+    
+    /* Bottom navigation */
+    .main-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 0.5rem;
+        justify-content: space-around;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    
+    .main-nav a {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        flex: 1;
+        text-align: center;
+    }
+    
+    /* Adjust social sidebar for mobile */
+    .social-sidebar {
+        bottom: 60px;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        background: rgba(255,255,255,0.9);
+        padding: 8px 15px;
+        border-radius: 30px;
+        width: auto;
     }
 }
