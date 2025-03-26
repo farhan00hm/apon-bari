@@ -9,7 +9,12 @@
     <!-- Preload resources -->
     <link rel="preload" href="assets/css/style.css" as="style">
     <link rel="preload" href="assets/css/responsive.css" as="style">
-    
+    <!-- Add Alex Brush font -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <!-- Updated viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css" media="(max-width: 768px)">
@@ -32,8 +37,8 @@
     </script>
 </head>
 <body>
-    <!-- Floating Social Sidebar -->
-    <aside class="social-sidebar">
+    <!-- Floating Social Links (now at bottom for all views) -->
+    <div class="floating-socials">
         <a href="https://facebook.com/aponbaribd" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="https://instagram.com/aponbari" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://tiktok.com/@aponbaribd" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
@@ -45,11 +50,12 @@
             </svg>
         </a>
         <a href="https://wa.me/8801811936618" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    </aside>
+    </div>
 
     <header class="main-header">
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Apon Bari Logo" width="150">
+        <div class="branding">
+            <img src="assets/images/logo.png" alt="Apon Bari Logo" class="logo">
+            <h1 class="site-name">Apon Bari</h1>
         </div>
         <nav class="main-nav">
             <a href="#attractions">Attractions</a>
@@ -180,11 +186,11 @@
                         <div class="card-body">
                             <h3><i class="fas fa-coffee"></i> Coffee House</h3>
                             <ul class="menu">
-                                <li>Coffee <span>₹80</span></li>
-                                <li>Tea <span>₹60</span></li>
-                                <li>Cold Coffee <span>₹120</span></li>
+                                <li>Coffee (from machine) <span>₹25</span></li>
+                                <li>Tea (from machine) <span>₹20</span></li>
+                                <li>Yogurt (from our own farm) <span>₹35</span></li>
                                 <li>Hot Chocolate <span>₹100</span></li>
-                                <li>Snacks <span>₹50-150</span></li>
+                                <li>Snacks, soft drinks, and icecream <span>@ MRP</span></li>
                             </ul>
                         </div>
                     </div>
@@ -195,11 +201,15 @@
                         <div class="card-body">
                             <h3><i class="fas fa-utensils"></i> Chatpati Ghar</h3>
                             <ul class="menu">
-                                <li>Fuchka <span>₹40</span></li>
-                                <li>Chotpoti <span>₹60</span></li>
-                                <li>Jhalmuri <span>₹50</span></li>
+                                <li>Fuchka <span>₹60</span></li>
+                                <li>Chotpoti <span>₹50</span></li>
                                 <li>Singara <span>₹20</span></li>
-                                <li>Samucha <span>₹25</span></li>
+                                <li>Samosa <span>₹20</span></li>
+                                <li>Sandwich <span>₹50</span></li>
+                                <li>Boiled egg <span>₹20</span></li>
+                                <li>Tea <span>₹10</span></li>
+                                <li>Watermelon juice <span>₹50</span></li>
+                                <li>Lassi <span>₹50</span></li>
                             </ul>
                         </div>
                     </div>
