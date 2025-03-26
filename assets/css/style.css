@@ -1,0 +1,35 @@
+/* Basic responsive styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.hero {
+    height: 100vh;
+    background: url('../images/hero-background.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.social-buttons img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+/* Add more styles for other sections */
