@@ -1,0 +1,58 @@
+/* ================ MOBILE STYLES ================ */
+@media (max-width: 768px) {
+    /* Header */
+    .main-header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .main-nav {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Hero */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    /* Social Sidebar */
+    .social-sidebar {
+        left: 10px;
+        transform: none;
+        top: auto;
+        bottom: 20px;
+        flex-direction: row;
+    }
+    
+    .social-sidebar a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Share Buttons */
+    .share-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .share-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        #location .grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .map-container {
+            height: 300px;
+        }
+    }    
+    
+    /* Add other mobile-specific styles here */
+}
