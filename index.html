@@ -35,6 +35,8 @@
       gtag('js', new Date());
       gtag('config', 'G-7QS086TDQR');
     </script>
+    <!-- Add this before </body> -->
+<script src="assets/js/carousel.js" defer></script>
 </head>
 <body>
     <!-- Floating Social Links (now at bottom for all views) -->
@@ -108,7 +110,7 @@
                             <p>Enjoy our serene water features including boating facilities in the largest pond</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="card-img-container">
                             <img src="assets/images/rides.webp" alt="Children's rides" class="card-img">
                         </div>
@@ -116,7 +118,68 @@
                             <h3>Children's Play Area</h3>
                             <p>Fun and safe rides for kids of all ages</p>
                         </div>
-                    </div>
+                    </div> -->
+<!-- Replace the current rides card in attractions section with this -->
+<section id="rides" class="section">
+    <div class="container">
+      <h2 class="section-title">Children's Rides</h2>
+      
+      <div class="nature-carousel">
+        <!-- Slide 1 -->
+        <div class="ride-slide active">
+          <div class="image-wrapper">
+            <img src="assets/images/rides-1.webp" alt="Treehouse Adventure" loading="lazy">
+          </div>
+          <div class="ride-content">
+            <div class="text-backdrop"></div>
+            <h3>Treehouse Adventure</h3>
+            <p class="subtitle">Height: 15ft | Age 6+</p>
+            <p class="desc">Climb through organic bamboo structures with safety nets</p>
+            <div class="eco-badge">♻️ Made from sustainable materials</div>
+          </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="ride-slide">
+          <div class="image-wrapper">
+            <img src="assets/images/rides-2.webp" alt="Butterfly Swing" loading="lazy">
+          </div>
+          <div class="ride-content">
+            <div class="text-backdrop"></div>
+            <h3>Butterfly Swing</h3>
+            <p class="subtitle">Gentle motion | Age 2+</p>
+            <p class="desc">Colorful swings shaped like butterflies with full harness</p>
+            <div class="eco-badge">♻️ Non-toxic paints</div>
+          </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="ride-slide">
+          <div class="image-wrapper">
+            <img src="assets/images/rides-3.webp" alt="Boat Pond" loading="lazy">
+          </div>
+          <div class="ride-content">
+            <div class="text-backdrop"></div>
+            <h3>Boat Pond</h3>
+            <p class="subtitle">Pedal boats | Age 5+</p>
+            <p class="desc">Safe shallow pond with mini pedal boats (life jackets provided)</p>
+            <div class="eco-badge">♻️ Solar-powered water circulation</div>
+          </div>
+        </div>
+        
+        <!-- Navigation -->
+        <button class="carousel-prev" aria-label="Previous ride">❮</button>
+        <button class="carousel-next" aria-label="Next ride">❯</button>
+        
+        <!-- Dots -->
+        <div class="carousel-dots">
+          <button class="dot active" aria-label="Go to slide 1"></button>
+          <button class="dot" aria-label="Go to slide 2"></button>
+          <button class="dot" aria-label="Go to slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>                    
                     <div class="card">
                         <div class="card-img-container">
                             <img src="assets/images/nature.jpg" alt="Natural beauty" class="card-img">

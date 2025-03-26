@@ -102,6 +102,29 @@
     .footer-links {
       align-items: center;
     }
+    .nature-carousel {
+      margin: 1rem auto;
+    }
+    
+    .ride-content {
+      padding: 1rem;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+    
+    .ride-content h3 {
+      font-size: 1.2rem;
+    }
+    
+    .subtitle,
+    .desc {
+      font-size: 0.9rem;
+    }    
   }
   
   /* ================ SMALL MOBILE ADJUSTMENTS ================ */
@@ -127,4 +150,13 @@
       height: 32px;
       font-size: 0.9rem;
     }
+    .eco-badge {
+      font-size: 0.8rem;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+      width: 30px;
+      height: 30px;
+    }    
   }
