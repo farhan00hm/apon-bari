@@ -6,31 +6,47 @@
         padding: 1rem;
     }
     
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
     .main-nav {
-        margin-top: 1rem;
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1rem;
     }
     
     /* Hero */
+    .hero {
+        margin-top: 120px;
+        height: auto;
+        padding: 4rem 0;
+    }
+    
     .hero h1 {
         font-size: 2rem;
     }
     
     /* Social Sidebar */
     .social-sidebar {
-        left: 10px;
-        transform: none;
         top: auto;
         bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
         flex-direction: row;
+        background: rgba(255,255,255,0.9);
+        padding: 8px 15px;
+        border-radius: 30px;
     }
     
     .social-sidebar a {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         font-size: 1rem;
+    }
+    
+    .social-sidebar a:hover {
+        transform: translateY(-3px);
     }
     
     /* Share Buttons */
@@ -43,16 +59,29 @@
         width: 100%;
         justify-content: center;
     }
-
-    @media (max-width: 768px) {
-        #location .grid {
-            grid-template-columns: 1fr;
-        }
-        
-        .map-container {
-            height: 300px;
-        }
-    }    
     
-    /* Add other mobile-specific styles here */
+    /* Sections */
+    .section {
+        padding: 3rem 0;
+    }
+    
+    /* Cards */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Map */
+    .map-container {
+        height: 300px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-links {
+        align-items: center;
+    }
 }
