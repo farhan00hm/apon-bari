@@ -189,7 +189,7 @@
   .hero {
     height: calc(100vh - 100px);
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                url('../images/hero-bg.jpg') center/cover no-repeat;
+                url('../images/hero-bg.webp') center/cover no-repeat;
     display: flex;
     align-items: center;
     text-align: center;
